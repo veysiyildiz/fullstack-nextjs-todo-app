@@ -28,8 +28,8 @@ import { TodoValidation } from '@/lib/validations/todo';
 interface Props {
   userId: string;
   status: string;
-  setOpen: () => void;
-  handleAddTodo: () => void;
+  setOpen: (isOpen: boolean) => void;
+  handleAddTodo: ({ title, desc, status }: { title: string; desc: string; status: string }) => void;
 }
 
 function CreateTodo({ userId, setOpen, handleAddTodo, status }: Props) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Data } from '../../constants/interfaces';
+import { Data } from '../../interfaces';
 import {
   Sheet,
   SheetContent,
@@ -13,8 +13,8 @@ import { Button } from '../ui/button';
 
 interface Props {
     data: Data;
-    handleDragging: () => void;
-    handleRemoveTodo: () => void;
+    handleDragging: (dragging: boolean) => void;
+    handleRemoveTodo: (todoId: string) => void;
   }
 
 export const CardItem = ({

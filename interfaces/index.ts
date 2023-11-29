@@ -3,7 +3,7 @@ export interface Data {
     _id: string
     title: string
     desc: string
-    status: Status
+    status: string
     createdAt: string
 }
 

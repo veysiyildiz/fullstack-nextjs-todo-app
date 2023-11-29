@@ -5,6 +5,7 @@ import { connectToDB } from '../mongoose';
 
 import User from '../models/user.model';
 import ToDo from '../models/todo.model';
+import { stat } from 'fs';
 
 export async function fetchTodos(userId: string) {
   try {
@@ -37,6 +38,7 @@ interface Params {
   title: string,
   desc: string,
   author: string,
+  status: string,
   path: string,
 }
 

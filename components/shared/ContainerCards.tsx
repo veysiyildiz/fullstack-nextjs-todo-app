@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Data, Status } from '../../constants/interfaces';
+import { Data, Status } from '../../interfaces';
 import { CardItem } from './CardItem';
 import { MdAdd } from 'react-icons/md';
 import {
@@ -19,10 +19,10 @@ interface Props {
   status: Status;
   isDragging: boolean;
   userId: string;
-  handleDragging: () => void;
-  handleUpdateList: () => void;
-  handleAddTodo: () => void;
-  handleRemoveTodo: () => void;
+  handleDragging: (dragging: boolean) => void;
+  handleUpdateList: (text: string, status: string) => void;
+  handleAddTodo: ({ title, desc, status }: { title: string, desc: string, status: string }) => void;
+  handleRemoveTodo: (todoId: string) => void;
 }
 
 export const ContainerCards = ({

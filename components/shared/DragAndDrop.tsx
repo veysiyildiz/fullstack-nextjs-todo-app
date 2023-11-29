@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useTodo } from '../../hooks/useTodo';
-import { Status } from '../../constants/interfaces';
+import { Status } from '../../interfaces';
 import { ContainerCards } from './ContainerCards';
 
 const typesHero: Status[] = ['Todo', 'In Progress', 'Done'];

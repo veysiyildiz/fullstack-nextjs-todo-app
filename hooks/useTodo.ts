@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { redirect } from 'next/navigation';
 import { fetchUserInfo } from '@/lib/actions/user.actions';
-import { Data, Status } from '../constants/interfaces';
+import { Data, Status } from '../interfaces';
 import { updateToDoStatus } from '@/lib/actions/todo.actions';
 import { createToDo, fetchTodos, deleteToDo } from '@/lib/actions/todo.actions';
 import { usePathname } from 'next/navigation';
@@ -10,7 +10,7 @@ export const useTodo = (userId: string) => {
   const pathname = usePathname();
   const [isDragging, setIsDragging] = useState(false);
   const [listItems, setListItems] = useState<Data[]>([]);
-  const [authorId, setAuthorId] = useState<string | null>(null);
+  const [authorId, setAuthorId] = useState<string>('');
 
   useEffect(() => {
     async function fetchUserTodos() {
@@ -36,7 +36,7 @@ export const useTodo = (userId: string) => {
     fetchUserTodos();
   }, [userId, pathname]);
 
-  const handleUpdateList = async (text: string, status: Status) => {
+  const handleUpdateList = async (text: string, status: string) => {
     let card = listItems.find((item) => item._id === text);
     if (card && card.status !== status) {
       card.status = status;
@@ -53,7 +53,7 @@ export const useTodo = (userId: string) => {
 
   const handleDragging = (dragging: boolean) => setIsDragging(dragging);
 
-  const handleAddTodo = async ({ title, desc, status }) => {
+  const handleAddTodo = async ({ title, desc, status }: { title: string, desc: string, status: string }) => {
     try {
       const newTodo = await createToDo({
         title,
