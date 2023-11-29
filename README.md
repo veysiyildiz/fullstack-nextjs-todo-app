@@ -1,6 +1,6 @@
 # Fullstack Next.js Todo App
 
-[Working Version](https://fullstack-nextjs-todo-app-veysiyildiz.vercel.app/)
+![screencapture-fullstack-nextjs-todo-app-veysiyildiz-vercel-app](https://github.com/veysiyildiz/fullstack-nextjs-todo-app/assets/2284134/facc4c8e-5a46-4698-855a-51d89ecf27a7)
 
 ## Overview
 
@@ -28,8 +28,11 @@ This project, the Fullstack Next.js Todo App, is a comprehensive showcase of my 
 2. Install dependencies: `cd fullstack-nextjs-todo-app && yarn install`
 3. Set up environment variables: Create a `.env.local` file and add your configurations.
 4. Run the development server: `yarn dev`
+5. Feel free to explore the project. Feedback and suggestions are always welcome!
 
-Feel free to explore the project. Feedback and suggestions are always welcome!
+## Live Demo
+
+Explore the live demo [here](https://fullstack-nextjs-todo-app-veysiyildiz.vercel.app/).
 
 ## Contact
 
