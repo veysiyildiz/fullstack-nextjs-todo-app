@@ -6,3 +6,12 @@ export interface Data {
     status: Status
     createdAt: string
 }
+
+export interface ImgResponseType {
+  name: string;
+  size: number;
+  key: string;
+  serverData: null;
+  url: string;
+  fileUrl: string;
+}

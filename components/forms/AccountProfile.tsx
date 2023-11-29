@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form';
 import { usePathname, useRouter } from 'next/navigation';
 import { ChangeEvent, useState } from 'react';
 import { zodResolver } from '@hookform/resolvers/zod';
+import { ImgResponseType } from '../../interfaces';
 
 import {
   Form,
@@ -59,7 +60,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
 
     const hasImageChanged = isBase64Image(blob);
     if (hasImageChanged) {
-      const imgRes = await startUpload(files);
+      const imgRes = await startUpload(files) as ImgResponseType[];
 
       if (imgRes && imgRes[0]?.fileUrl) {
         values.profile_photo = imgRes[0].fileUrl;
