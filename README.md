@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fullstack Next.js Todo App
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This project, the Fullstack Next.js Todo App, is a comprehensive showcase of my skills as a frontend developer. Built with Next.js, it seamlessly integrates frontend and backend functionalities, providing a dynamic and responsive user experience.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js:** The core framework for building the application, providing a fast and efficient development experience.
+- **Clerk:** Used for authentication and user management.
+- **React Hook Form:** Ensuring efficient and easy form handling.
+- **shadcn/ui:** Powering polished and interactive user interface components using Radix UI.
+- **Mongoose:** Facilitating MongoDB interactions for data storage.
+- And many more! Check out the `package.json` for a complete list.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Authentication:** Secure user authentication and management with Clerk.
+- **Form Handling:** Efficient form handling with React Hook Form.
+- **Dynamic UI:** Polished and interactive user interface components from Radix UI.
+- **Data Storage:** Seamless integration with MongoDB using Mongoose.
 
-## Learn More
+## Get Started
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository: `git clone https://github.com/veysiyildiz/fullstack-nextjs-todo-app.git`
+2. Install dependencies: `cd fullstack-nextjs-todo-app && yarn install`
+3. Set up environment variables: Create a `.env.local` file and add your configurations.
+4. Run the development server: `yarn dev`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Feel free to explore the project. Feedback and suggestions are always welcome!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
+If you have any questions or would like to connect, feel free to reach out. Let's discuss the endless possibilities of fullstack development with Next.js!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[LinkedIn](https://www.linkedin.com/in/veysiyildiz/) | [GitHub](https://github.com/veysiyildiz/)
